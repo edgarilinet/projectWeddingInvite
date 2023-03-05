@@ -1,0 +1,212 @@
+body {
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 24px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -6em;
+}
+
+.top-menu {
+    position: sticky;
+    top: 20px;
+    z-index: 10;
+    display: flex;
+    justify-content: right;
+}
+
+.btn-sound {
+
+    width: 3em;
+    height: 3em;
+    background: #D9D9D9;
+    border-radius: 8px;
+
+}
+
+.sound {
+    height: 100%;
+    color: #fff;
+    display: flex;
+    background-color: #A9AF9D;
+    justify-content: right;
+}
+
+.sound-inside {
+    margin: 20px;
+}
+
+.cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sname {
+    padding-inline: 1em;
+    font-size: 1.5em;
+    width: fit-content;
+    background: #A9AF9D;
+    backdrop-filter: blur(2px);
+    border-radius: 20px;
+}
+
+.sname p {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+}
+
+.image-text {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-direction: column;
+    top: -3em;
+}
+
+.image {
+    margin-left: 5%;
+    width: 90%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+}
+
+#circle_of_roses {
+    width: 90%;
+    transform: rotate(90deg);
+}
+
+.circle {
+    position: absolute;
+    top: 11em;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.first {
+    width: 28em;
+    height: 28em;
+    background: rgba(39, 56, 10, 0.4);
+}
+
+.second {
+    top: 14.5em;
+    width: 21em;
+    height: 21em;
+    background: rgba(39, 56, 10, 0.4);
+}
+
+.third {
+    top: 18em;
+    width: 14em;
+    height: 14em;
+    background: #A9AF9D;
+    opacity: 80%;
+}
+
+.text_circle {
+    text-align: center;
+}
+
+.hello{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 4em;
+}
+
+.program {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #D9D9D9;
+    border-radius: 1em;
+    width: 25em;
+}
+
+.name-box {
+    
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+}
+
+.chert {
+    margin: 20px 0;
+	padding: 0;
+	height: 0;
+    border: none;
+	border-top: 1px solid #333;
+    border-radius: 1px;
+}
+
+.big{
+    width: 16em;
+}
+
+.mini{
+    width: 10em;
+}
+
+.mae {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    color: #000000;
+    margin-top: 0.5em;
+    line-height: 2.5em;
+}
+
+.mapa{
+    width: 100%;
+}
+
+.dress{
+    margin-top: 3em;
+}
+
+.pic{
+    margin: 1em;
+}
+
+.dress-pic{
+    display: flex;
+    flex-direction: row;
+
+}
+@font-face {
+    font-family: 'Roboto';
+    src: local("Roboto"),
+    url("fonts/AgoniaLyubviRegular.woff") format("woff2");
+}
+
+@font-face {
+    font-family: 'Usual';
+    src: local("Usul"),
+    url("fonts/TrajanPro3-Regular.woff") format("woff2");
+}
+.lovely{
+   font-family: Roboto;
+   line-height: 2em;
+}
