@@ -41,7 +41,7 @@ body {
 
 .sname {
     padding-inline: 1em;
-    font-size: 1.5em;
+    font-size: 1em;
     width: fit-content;
     background: #A9AF9D;
     backdrop-filter: blur(2px);
@@ -54,6 +54,7 @@ body {
     text-align: center;
     letter-spacing: 0.01em;
     text-transform: capitalize;
+    font-family: 'Usual';
 }
 
 .image-text {
@@ -61,13 +62,13 @@ body {
     position: relative;
     justify-content: center;
     flex-direction: column;
-    top: -3em;
+    
 }
 
 .image {
     position: relative;
     margin-left: 5%;
-    
+
     width: 1000px;
     height: 1000px;
     display: flex;
@@ -81,7 +82,7 @@ body {
 
 .circle {
     position: absolute;
-    
+
     left: 0;
     right: 0;
     margin-left: auto;
@@ -101,7 +102,7 @@ body {
 }
 
 .second {
-    top: 27%;
+    top: 28%;
     width: 47%;
     height: 47%;
     background: rgba(39, 56, 10, 0.4);
@@ -119,7 +120,40 @@ body {
     text-align: center;
 }
 
-.hello{
+@media screen and (min-device-width: 1000px) {
+    .sname{
+        display: none;
+        
+    }
+    .image-text{
+        top: -3em;
+    }
+}
+
+@media screen and (max-device-width: 1000px) {
+    .image{
+        height: 350px;
+        width: 350px;
+        
+    }
+
+    #circle_of_roses{
+        object-fit: cover;
+        
+    }
+
+    .image-text{
+        height: 101vh;
+    }
+
+    .sname{
+        position: absolute;
+        top: 0;
+        left: 10%;
+    }
+}
+
+.hello {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -137,25 +171,25 @@ body {
 }
 
 .name-box {
-    
+
     letter-spacing: 0.01em;
     text-transform: capitalize;
 }
 
 .chert {
     margin: 20px 0;
-	padding: 0;
-	height: 0;
+    padding: 0;
+    height: 0;
     border: none;
-	border-top: 1px solid #333;
+    border-top: 1px solid #333;
     border-radius: 1px;
 }
 
-.big{
+.big {
     width: 16em;
 }
 
-.mini{
+.mini {
     width: 10em;
 }
 
@@ -170,35 +204,37 @@ body {
     line-height: 2.5em;
 }
 
-.mapa{
+.mapa {
     width: 100%;
 }
 
-.dress{
+.dress {
     margin-top: 3em;
 }
 
-.pic{
+.pic {
     margin: 1em;
 }
 
-.dress-pic{
+.dress-pic {
     display: flex;
     flex-direction: row;
 
 }
+
 @font-face {
     font-family: 'Roboto';
     src: local("Roboto"),
-    url("fonts/AgoniaLyubviRegular.woff") format("woff2");
+        url("fonts/AgoniaLyubviRegular.woff") format("woff2");
 }
 
 @font-face {
     font-family: 'Usual';
     src: local("Usul"),
-    url("fonts/TrajanPro3-Regular.woff") format("woff2");
+        url("fonts/TrajanPro3-Regular.woff") format("woff2");
 }
-.lovely{
-   font-family: Roboto;
-   line-height: 2em;
+
+.lovely {
+    font-family: Roboto;
+    line-height: 2em;
 }
