@@ -6,7 +6,6 @@ body {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-
 }
 
 html {
@@ -54,7 +53,6 @@ html {
     justify-content: center;
     align-items: center;
     align-content: center;
-
 }
 
 .autoscroll {
@@ -94,8 +92,6 @@ html {
     overflow: hidden;
 }
 
-
-
 .image {
     position: relative;
     width: 1000px;
@@ -112,12 +108,12 @@ html {
     max-width: 100%;
     overflow-x: auto;
     object-fit: cover;
-    width: 80%;
+    width: 100%;
+    margin-top: -100px;
 }
 
 .circle {
     position: absolute;
-
     left: 0;
     right: 0;
     margin-left: auto;
@@ -249,9 +245,7 @@ html {
     height: 40%;
 }
 
-.usual-font {
-    font-size: 18px;
-}
+
 
 .dress-pic {
     display: flex;
@@ -275,9 +269,13 @@ html {
 .lovely {
     font-family: "AgoniaLyubvi";
 
-    line-height: 1.5em;
+    line-height: 2em;
 }
 
 .small-text {
-    font-size: 18px;
+    font-size: 26px;
+}
+
+.usual-font {
+    font-size: 26px;
 }
