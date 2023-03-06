@@ -209,6 +209,10 @@ body {
     height: 40%;
 }
 
+.usual-font{
+    font-size: 18px;
+}
+
 .dress-pic {
     display: flex;
     flex-direction: row;
