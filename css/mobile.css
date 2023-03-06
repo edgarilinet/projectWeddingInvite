@@ -205,6 +205,10 @@ body {
     margin: 1em;
 }
 
+.pic img{
+    height: 40%;
+}
+
 .dress-pic {
     display: flex;
     flex-direction: row;

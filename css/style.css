@@ -6,6 +6,7 @@ body {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
+    
 }
 
 .main {
@@ -14,6 +15,7 @@ body {
     position: relative;
     width: 100%;
     z-index: 1;
+    align-items: center;
 }
 
 .top-menu {
@@ -47,6 +49,10 @@ body {
     background: #A9AF9D;
     backdrop-filter: blur(2px);
     border-radius: 20px;
+}
+
+.sname {
+    display: none;
 }
 
 .sname p {
@@ -121,62 +127,6 @@ body {
     text-align: center;
 }
 
-@media screen and (min-device-width: 1000px) {
-    .sname{
-        display: none;
-        
-    }
-    .image-text{
-        top: -3em;
-    }
-}
-
-@media screen and (max-device-width: 1000px) {
-    .cont{
-        width: 100%;
-    }
-    .image{
-        object-fit: cover;
-        width: 600px;
-        height: 600px;
-        
-    }
-
-    #circle_of_roses{
-        object-fit: cover;
-        max-width: 100%;
-        overflow-x:auto;
-    }
-
-    .image-text{
-        align-items: center;
-        object-fit: contain;
-        overflow-x: hidden;
-        width: 100%;
-        height: 101vh;
-    }
-
-    .sname{
-        position: absolute;
-        top: 0;
-        left: 10%;
-    }
-
-    .sec{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-
-    .program{
-        width: 100%;
-    }
-
-    .big{
-        width: 100em;
-    }
-}
-
 .hello {
     display: flex;
     flex-direction: column;
@@ -247,8 +197,8 @@ body {
 }
 
 @font-face {
-    font-family: 'Roboto';
-    src: local("Roboto"),
+    font-family: 'AgoniaLyubvi';
+    src: local("AgoniaLyubvi"),
         url("fonts/AgoniaLyubviRegular.woff") format("woff2");
 }
 
@@ -259,6 +209,6 @@ body {
 }
 
 .lovely {
-    font-family: Roboto;
+    font-family: "AgoniaLyubvi";
     line-height: 2em;
 }
