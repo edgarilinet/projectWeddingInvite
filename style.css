@@ -5,6 +5,7 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
 }
 
 .main {
@@ -39,7 +40,7 @@ body {
     align-items: center;
 }
 
-.sname {
+.sname div{
     padding-inline: 1em;
     font-size: 1em;
     width: fit-content;
@@ -95,7 +96,7 @@ body {
 }
 
 .first {
-    top: 20%;
+    top: 21%;
     width: 60%;
     height: 60%;
     background: rgba(39, 56, 10, 0.4);
@@ -131,18 +132,27 @@ body {
 }
 
 @media screen and (max-device-width: 1000px) {
+    .cont{
+        width: 100%;
+    }
     .image{
-        height: 350px;
-        width: 350px;
+        object-fit: cover;
+        width: 600px;
+        height: 600px;
         
     }
 
     #circle_of_roses{
         object-fit: cover;
-        
+        max-width: 100%;
+        overflow-x:auto;
     }
 
     .image-text{
+        align-items: center;
+        object-fit: contain;
+        overflow-x: hidden;
+        width: 100%;
         height: 101vh;
     }
 
@@ -150,6 +160,20 @@ body {
         position: absolute;
         top: 0;
         left: 10%;
+    }
+
+    .sec{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .program{
+        width: 100%;
+    }
+
+    .big{
+        width: 100em;
     }
 }
 
@@ -167,7 +191,7 @@ body {
     align-items: center;
     background: #D9D9D9;
     border-radius: 1em;
-    width: 25em;
+    width: 90%;
 }
 
 .name-box {
