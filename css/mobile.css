@@ -9,8 +9,10 @@ body {
 
 }
 
-html{
+html {
     scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    background-color: #F7F7F4;
 }
 
 .main {
@@ -42,16 +44,20 @@ html{
 
 .cont {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     width: 100%;
-    
-    
+    flex-direction: column;
 }
 
-.autoscroll{
-    scroll-snap-align:start;
+.cent-vh {
+    height: 101vh;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+}
+
+.autoscroll {
+    scroll-snap-align: start;
 }
 
 .sname {
@@ -79,9 +85,7 @@ html{
 .image-text {
     display: flex;
     position: relative;
-    justify-content: center;
     flex-direction: column;
-    align-items: center;
     object-fit: contain;
     overflow-x: hidden;
     width: 100%;
@@ -151,17 +155,19 @@ html{
 .sec {
     width: 100%;
     display: flex;
-    justify-content: center;
 }
 
 .hello {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     text-align: center;
-    justify-content: center;
-    height: 100vh;
+}
+
+.hello div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .program {
@@ -186,6 +192,7 @@ html{
     border: none;
     border-top: 1px solid #333;
     border-radius: 1px;
+
 }
 
 .big {
@@ -207,18 +214,11 @@ html{
     line-height: 2.5em;
 }
 
-.preMapa{
+.preMapa {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     text-align: center;
-    justify-content: center;
-    height: 100vh;
-}
-
-.preMapa div{
-    width: 100%;
 }
 
 .mapa {
@@ -228,17 +228,22 @@ html{
 
 .dress {
     margin-top: 3em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
 }
 
 .pic {
     margin: 1em;
 }
 
-.pic img{
+.pic img {
     height: 40%;
 }
 
-.usual-font{
+.usual-font {
     font-size: 18px;
 }
 
@@ -263,10 +268,10 @@ html{
 
 .lovely {
     font-family: "AgoniaLyubvi";
-    
+
     line-height: 1.5em;
 }
 
-.small-text{
+.small-text {
     font-size: 18px;
 }

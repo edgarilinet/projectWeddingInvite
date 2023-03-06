@@ -6,7 +6,13 @@ body {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    
+
+}
+
+html {
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    background-color: #F7F7F4;
 }
 
 .main {
@@ -32,27 +38,40 @@ body {
     height: 3em;
     background: #D9D9D9;
     border-radius: 8px;
-
+    height: 60px;
+    width: 60px;
 }
 
 .cont {
     display: flex;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
 
-.sname div{
+.cent-vh {
+    height: 101vh;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+}
+
+.autoscroll {
+    scroll-snap-align: start;
+}
+
+.sname {
+    display: none;
+}
+
+.sname div {
     padding-inline: 1em;
     font-size: 1em;
     width: fit-content;
     background: #A9AF9D;
     backdrop-filter: blur(2px);
     border-radius: 20px;
-}
-
-.sname {
-    display: none;
 }
 
 .sname p {
@@ -67,24 +86,33 @@ body {
 .image-text {
     display: flex;
     position: relative;
-    justify-content: center;
     flex-direction: column;
-    
+    object-fit: contain;
+    overflow-x: hidden;
+    width: 100%;
+    height: 101vh;
+    overflow: hidden;
 }
+
+
 
 .image {
     position: relative;
-    margin-left: 5%;
-
     width: 1000px;
     height: 1000px;
     display: flex;
     justify-content: center;
+    object-fit: cover;
+    z-index: 2;
 }
 
 #circle_of_roses {
-    width: 90%;
+    position: absolute;
     transform: rotate(90deg);
+    max-width: 100%;
+    overflow-x: auto;
+    object-fit: cover;
+    width: 80%;
 }
 
 .circle {
@@ -128,11 +156,24 @@ body {
 }
 
 .hello {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.hello div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    margin-bottom: 4em;
+}
+
+
+.sec {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .program {
@@ -141,7 +182,7 @@ body {
     align-items: center;
     background: #D9D9D9;
     border-radius: 1em;
-    width: 90%;
+    width: 60%;
 }
 
 .name-box {
@@ -157,6 +198,7 @@ body {
     border: none;
     border-top: 1px solid #333;
     border-radius: 1px;
+
 }
 
 .big {
@@ -178,21 +220,43 @@ body {
     line-height: 2.5em;
 }
 
+.preMapa {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
 .mapa {
+    margin-top: 4vh;
     width: 100%;
 }
 
 .dress {
     margin-top: 3em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
 }
 
 .pic {
     margin: 1em;
 }
 
+.pic img {
+    height: 40%;
+}
+
+.usual-font {
+    font-size: 18px;
+}
+
 .dress-pic {
     display: flex;
     flex-direction: row;
+    justify-content: center;
 
 }
 
@@ -210,5 +274,10 @@ body {
 
 .lovely {
     font-family: "AgoniaLyubvi";
-    line-height: 2em;
+
+    line-height: 1.5em;
+}
+
+.small-text {
+    font-size: 18px;
 }
