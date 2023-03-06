@@ -9,6 +9,10 @@ body {
 
 }
 
+html{
+    scroll-snap-type: y mandatory;
+}
+
 .main {
     display: flex;
     flex-direction: column;
@@ -42,6 +46,12 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
+    
+    
+}
+
+.autoscroll{
+    scroll-snap-align:start;
 }
 
 .sname {
@@ -77,6 +87,8 @@ body {
     width: 100%;
     height: 101vh;
 }
+
+
 
 .image {
     position: relative;
