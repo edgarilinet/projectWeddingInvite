@@ -279,3 +279,32 @@ html {
 .usual-font {
     font-size: 26px;
 }
+
+.arrow{
+    position: absolute;
+    top: 94vh;
+    
+}
+
+.arrow-sub img{
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    opacity: 100%;
+}
+
+#secArrow{
+    position: absolute;
+    top: 20px;
+    animation-name: arrowmotion;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes arrowmotion {
+    70%{
+        top: 0px;
+        opacity: 10%;
+    }
+}
