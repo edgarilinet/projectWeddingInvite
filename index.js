@@ -18,18 +18,18 @@ function  displayLocation(position) {
 
 function inform() {
     let formValue =`
-        Новый ответ:\n
-        от: ${latitude} : ${longitude},\n
-        Фамилия: ${document.getElementById('family').value};\n
-        Имя: ${document.getElementById('nameFamily').value};\n
-        Буду: ${tfTranslate(document.getElementById('budu').checked)}; \n
-        Напитки: \n
-            вино: ${tfTranslate(document.getElementById('wine').checked)};\n
-            Шампанское: ${tfTranslate(document.getElementById('spar').checked)}; \n
-            Водка: ${tfTranslate(document.getElementById('vodka').checked)}; \n
-            Виски: ${tfTranslate(document.getElementById('wiskey').checked)}; \n
-            Без алкоголя: ${tfTranslate(document.getElementById('no-alko').checked)};\n
-            Другое: ${tfTranslate(document.getElementById('other').checked)};\n
+        **Новый ответ:**
+        от: ${latitude} : ${longitude},
+        Фамилия: ${document.getElementById('family').value};
+        Имя: ${document.getElementById('nameFamily').value};
+        Буду: ${tfTranslate(document.getElementById('budu').checked)}; 
+        Напитки: 
+            вино: ${tfTranslate(document.getElementById('wine').checked)};
+            Шампанское: ${tfTranslate(document.getElementById('spar').checked)}; 
+            Водка: ${tfTranslate(document.getElementById('vodka').checked)}; 
+            Виски: ${tfTranslate(document.getElementById('wiskey').checked)}; 
+            Без алкоголя: ${tfTranslate(document.getElementById('no-alko').checked)};
+            Другое: ${tfTranslate(document.getElementById('other').checked)};
         `
     let text = formValue;
     console.log(formValue);

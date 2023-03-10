@@ -182,7 +182,6 @@ html {
 }
 
 .name-box {
-
     letter-spacing: 0.01em;
     text-transform: capitalize;
 }
@@ -194,7 +193,6 @@ html {
     border: none;
     border-top: 1px solid #333;
     border-radius: 1px;
-
 }
 
 .big {
@@ -234,7 +232,6 @@ html {
     display: flex;
     flex-direction: column;
     text-align: center;
-
 }
 
 .pic {
@@ -244,8 +241,6 @@ html {
 .pic img {
     height: 40%;
 }
-
-
 
 .dress-pic {
     display: flex;
@@ -268,7 +263,6 @@ html {
 
 .lovely {
     font-family: "AgoniaLyubvi";
-
     line-height: 2em;
 }
 
@@ -440,7 +434,7 @@ label {
 }
 
 .custom-radio:focus+label::before {
-    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    box-shadow: 0 0 0 0.2rem rgba(13, 130, 173, 0.25);
 }
 
 .custom-radio:focus:not(:checked)+label::before {
