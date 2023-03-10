@@ -1,23 +1,37 @@
 let chatid = "-1001667496163";
 let token = "6029601858:AAHZ3Bn0d05uXLswYtrDfyzklrotUxAWo7k";
-window.onload = getMyLocation; 
-let	latitude;
-let	longitude;
-function getMyLocation () {
-	if (navigator.geolocation) {
-		navigator.geolocation.getCurrentPosition(displayLocation); 
-	}
+window.onload = getMyLocation;
+let latitude;
+let longitude;
+let radioBudu = document.getElementById('budu');
+let radioNeBudu = document.getElementById('!budu');
+
+
+function getMyLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(displayLocation);
+    }
 }
 
-function  displayLocation(position) { 
-	latitude = position.coords.latitude; //широтa
-	longitude = position.coords.longitude; //долготa
-	console.log(latitude, longitude)
+function displayLocation(position) {
+    latitude = position.coords.latitude; //широтa
+    longitude = position.coords.longitude; //долготa
+    console.log(latitude, longitude)
 }
-    
+
+function radiocheck(id){
+    if(id === 'budu'){
+        radioBudu.checked = true;
+        radioNeBudu.checked = false;
+    }else if(id === 'neBudu'){
+        radioBudu.checked = false;
+        radioNeBudu.checked = true;
+    }
+}
+
 
 function inform() {
-    let formValue =`
+    let formValue = `
         **Новый ответ:**
         от: ${latitude} : ${longitude},
         Фамилия: ${document.getElementById('family').value};
@@ -29,7 +43,8 @@ function inform() {
             Водка: ${tfTranslate(document.getElementById('vodka').checked)}; 
             Виски: ${tfTranslate(document.getElementById('wiskey').checked)}; 
             Без алкоголя: ${tfTranslate(document.getElementById('no-alko').checked)};
-            Другое: ${tfTranslate(document.getElementById('other').checked)};
+            Другое: ${tfTranslate(document.getElementById('other').checked)}:
+            ${document.getElementById('otherText').value}
         `
     let text = formValue;
     console.log(formValue);
@@ -42,7 +57,7 @@ function otpravka(token, text, chatid) {
         data: "parse_mode=HTML&text=" + encodeURIComponent(text),
     });
 };
-function tfTranslate(tf){
+function tfTranslate(tf) {
     if (tf) return 'да';
     else return 'нет';
 }

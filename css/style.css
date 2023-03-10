@@ -442,11 +442,26 @@ label {
 }
 
 .custom-radio:checked+label::before {
-    border-color: #1e8597;
-    background-color: #88ef0b;
+    border-color: #000;
+    background-color: #71957a;
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
 }
 
 .custom-radio:disabled+label::before {
     background-color: #d20f22;
 }
+
+input[type="text"] {
+    border: 1.5px solid #526e5a; 
+    border-radius: 3px; 
+    -webkit-border-radius: 3px; 
+    -moz-border-radius: 3px; 
+    -khtml-border-radius: 3px; 
+    background: #ffffff !important; 
+    outline: none; 
+    height: 24px; 
+    width: 100%;
+    padding: 0.5em;
+    color: #3b3838; 
+    font-family: Tahoma; 
+ }
