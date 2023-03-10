@@ -62,3 +62,7 @@ function tfTranslate(tf) {
     else return 'нет';
 }
 
+function scrollArrow(id){
+    console.log('scroll ok');
+    document.getElementById(id).scrollIntoView();
+}

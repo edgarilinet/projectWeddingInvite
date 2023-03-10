@@ -15,7 +15,6 @@
         <div class="btn-sound">
         </div>
     </div>
-
     <div class="main">
         <div class="sname">
             <div>
@@ -44,15 +43,15 @@
                     </div>
                 </div>
                 <div class="arrow">
-                    <div class="arrow-sub arrow-animation">
+                    <div class="arrow-sub arrow-animation" onclick="scrollArrow('hello')">
                         <img src="  resources/arrow.png" alt="" id="firArrow">
                         <img src="  resources/arrow.png" alt="" id="secArrow">
                     </div>
                 </div>
             </div>
-            <div class="hello usual-font autoscroll cent-vh">
+            <div class="hello usual-font autoscroll cent-vh" id="hello">
                 <div class="arrow">
-                    <div class="arrow-sub arrow-animation">
+                    <div class="arrow-sub arrow-animation" onclick="scrollArrow('preMapa')">
                         <img src="  resources/arrow.png" alt="" id="firArrow">
                         <img src="  resources/arrow.png" alt="" id="secArrow">
                     </div>
@@ -83,7 +82,7 @@
                 </div>
 
             </div>
-            <div class="preMapa usual-font autoscroll cent-vh">
+            <div class="preMapa usual-font autoscroll cent-vh" id="preMapa">
                 <div class="lovely">
                     Как добраться
                 </div>
@@ -101,13 +100,13 @@
                         </script>
                 </div>
                 <div class="arrow">
-                    <div class="arrow-sub arrow-animation">
+                    <div class="arrow-sub arrow-animation" onclick="scrollArrow('sec')">
                         <img src="  resources/arrow.png" alt="" id="firArrow">
                         <img src="  resources/arrow.png" alt="" id="secArrow">
                     </div>
                 </div>
             </div>
-            <div class="sec usual-font autoscroll cent-vh">
+            <div class="sec usual-font autoscroll cent-vh" id="sec">
                 <div class="program">
                     <div class="name-box">
                         <br>
@@ -136,13 +135,13 @@
                     <div class="chert mini"></div>
                 </div>
                 <div class="arrow">
-                    <div class="arrow-sub arrow-animation">
+                    <div class="arrow-sub arrow-animation" onclick="scrollArrow('dress')">
                         <img src="  resources/arrow.png" alt="" id="firArrow">
                         <img src="  resources/arrow.png" alt="" id="secArrow">
                     </div>
                 </div>
             </div>
-            <div class="dress usual-font autoscroll cent-vh">
+            <div class="dress usual-font autoscroll cent-vh" id="dress">
                 <div>
                     Дресс-код
                     <div class="chert mini"></div>
@@ -168,17 +167,17 @@
                     </div>
                 </div>
                 <div class="arrow">
-                    <div class="arrow-sub arrow-animation">
-                        <img src="  resources/arrow.png" alt="" id="firArrow">
-                        <img src="  resources/arrow.png" alt="" id="secArrow">
+                    <div class="arrow-sub arrow-animation" onclick="scrollArrow('formAll')">
+                        <img src="resources/arrow.png" alt="" id="firArrow">
+                        <img src="resources/arrow.png" alt="" id="secArrow">
                     </div>
                 </div>
             </div>
-            <div class="formAll usual-font autoscroll cent-vh">
+            <div class="formAll usual-font autoscroll cent-vh" id="formAll">
                 <div class="forma">
                     ПОДТВЕРДИТЕ, ПОЖАЛУЙСТА,<br>
                     СВОЁ ПРИСУТСТВИЕ<br>
-                    НА ТОРЖЕСТВЕ!
+                    НА ТОРЖЕСТВЕ! <br> <br>
                     <form action="" id="teleform">
                         <label for="family">Фамилия</label>
                         <input type="text" name="family" id="family">

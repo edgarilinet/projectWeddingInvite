@@ -277,6 +277,7 @@ html {
 .arrow {
     position: absolute;
     top: 94vh;
+    z-index: 10;
 
 }
 
@@ -312,11 +313,11 @@ html {
 }
 
 .sec .arrow {
-    top: 394vh;
+    top: 397vh;
 }
 
 .dress .arrow {
-    top: 494vh;
+    top: 505vh;
 }
 
 .formAll {
