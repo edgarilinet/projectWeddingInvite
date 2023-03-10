@@ -274,3 +274,72 @@ html {
 .small-text {
     font-size: 18px;
 }
+
+.arrow {
+    position: absolute;
+    top: 94vh;
+
+}
+
+.arrow-sub img {
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    opacity: 30%;
+}
+
+#secArrow {
+    position: absolute;
+    top: 20px;
+    animation-name: arrowmotion;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes arrowmotion {
+    70% {
+        top: 0px;
+        opacity: 10%;
+    }
+}
+
+.hello .arrow {
+    top: 195vh;
+}
+
+.preMapa .arrow {
+    top: 295vh;
+}
+
+.sec .arrow {
+    top: 395vh;
+}
+
+.dress .arrow {
+    top: 500vh;
+}
+
+.formAll {
+    display: flex;
+
+}
+
+.forma {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #D9D9D9;
+    padding: 4vh;
+    border-radius: 2vh;
+}
+
+#teleform {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start
+}
+
+label {
+    display: flex;
+}

@@ -280,13 +280,13 @@ html {
     font-size: 26px;
 }
 
-.arrow{
+.arrow {
     position: absolute;
     top: 94vh;
-    
+
 }
 
-.arrow-sub img{
+.arrow-sub img {
     width: 30px;
     display: flex;
     flex-direction: column;
@@ -294,7 +294,7 @@ html {
     opacity: 100%;
 }
 
-#secArrow{
+#secArrow {
     position: absolute;
     top: 20px;
     animation-name: arrowmotion;
@@ -303,8 +303,48 @@ html {
 }
 
 @keyframes arrowmotion {
-    70%{
+    70% {
         top: 0px;
         opacity: 10%;
     }
+}
+
+.hello .arrow {
+    top: 194vh;
+}
+
+.preMapa .arrow {
+    top: 294vh;
+}
+
+.sec .arrow {
+    top: 394vh;
+}
+
+.dress .arrow {
+    top: 494vh;
+}
+
+.formAll {
+    display: flex;
+
+}
+
+.forma {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #D9D9D9;
+    padding: 4vh;
+    border-radius: 2vh;
+}
+
+#teleform {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start
+}
+
+label {
+    display: flex;
 }
