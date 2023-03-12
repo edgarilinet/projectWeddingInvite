@@ -5,6 +5,8 @@ let latitude;
 let longitude;
 let radioBudu = document.getElementById('budu');
 let radioNeBudu = document.getElementById('!budu');
+let family = document.getElementById('family');
+let nameFamily = document.getElementById('nameFamily');
 
 
 function getMyLocation() {
@@ -19,11 +21,11 @@ function displayLocation(position) {
     console.log(latitude, longitude)
 }
 
-function radiocheck(id){
-    if(id === 'budu'){
+function radiocheck(id) {
+    if (id === 'budu') {
         radioBudu.checked = true;
         radioNeBudu.checked = false;
-    }else if(id === 'neBudu'){
+    } else if (id === 'neBudu') {
         radioBudu.checked = false;
         radioNeBudu.checked = true;
     }
@@ -31,11 +33,14 @@ function radiocheck(id){
 
 
 function inform() {
-    let formValue = `
+    if ((family.value === '') || (nameFamily.value === '')) {
+        alert('Заполните все обязательные поля')
+    } else {
+        let formValue = `
         **Новый ответ:**
         от: ${latitude} : ${longitude},
-        Фамилия: ${document.getElementById('family').value};
-        Имя: ${document.getElementById('nameFamily').value};
+        Фамилия: ${family.value};
+        Имя: ${nameFamily.value};
         Буду: ${tfTranslate(document.getElementById('budu').checked)}; 
         Напитки: 
             вино: ${tfTranslate(document.getElementById('wine').checked)};
@@ -46,9 +51,10 @@ function inform() {
             Другое: ${tfTranslate(document.getElementById('other').checked)}:
             ${document.getElementById('otherText').value}
         `
-    let text = formValue;
-    console.log(formValue);
-    otpravka(token, text, chatid);
+        let text = formValue;
+        console.log(formValue);
+        otpravka(token, text, chatid);
+    }
 };
 function otpravka(token, text, chatid) {
     let z = $.ajax({
@@ -62,7 +68,13 @@ function tfTranslate(tf) {
     else return 'нет';
 }
 
-function scrollArrow(id){
+function scrollArrow(id) {
     console.log('scroll ok');
     document.getElementById(id).scrollIntoView();
 }
+
+// function other(){
+//     if(document.getElementById('other').checked){
+//         let otherInputText = createElement('input')
+//     }
+// }
