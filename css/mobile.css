@@ -487,6 +487,7 @@ input[type="text"] {
 }
 
 .colorPad{
+    margin-top: -1em;
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
