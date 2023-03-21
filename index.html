@@ -142,7 +142,7 @@
                 </div>
             </div>
             <div class="dress usual-font autoscroll cent-vh" id="dress">
-                <div>
+                <div class="dress-sub">
                     Дресс-код
                     <div class="chert mini"></div>
                     Нам будет очень приятно, <br>
@@ -165,6 +165,20 @@
                             наряды
                         </div>
                     </div>
+                    <div class="colorPad" >
+                        <div class="color-1 cent-vh" style="background-color: #617049;">
+                            1
+                        </div>
+                        <div class="color-1 cent-vh" style="background-color: #889569;" >
+                            2
+                        </div>
+                        <div class="color-1 cent-vh" style="background-color: #CDBFA4;">
+                            3
+                        </div>
+                        <div class="color-1 cent-vh" style="background-color: #ECE5D2;">
+                            4
+                        </div>
+                    </div>
                 </div>
                 <div class="arrow">
                     <div class="arrow-sub arrow-animation" onclick="scrollArrow('formAll')">
@@ -179,22 +193,27 @@
                     СВОЁ ПРИСУТСТВИЕ<br>
                     НА ТОРЖЕСТВЕ! <br> <br>
                     <form action="" id="teleform">
-                        <label for="family">Фамилия:</label>
-                        <input type="text" name="family" id="family" required placeholder="Ваша фамилия">
-                        <label for="nameFamily">Ваше имя (укажите все имена гостей и возраст детей) :</label>
-                        <input type="text" name="nameFamily" id="nameFamily" required placeholder="Ваши имена">
+                        <label for="family" style="padding-bottom: 0.5em;">Фамилия:</label>
+                        <input type="text" name="family" id="family" 
+                            required placeholder="Ваша фамилия"
+                        >
+                        <br>
+                        <label for="nameFamily" style="padding-bottom: 0.5em;">Ваше имя (укажите все имена гостей и возраст детей) :</label>
+                        <input type="text" name="nameFamily" id="nameFamily" 
+                            required placeholder="Ваши имена"
+                        >
                         <br>
                         <label for=""> Присутствие</label>
                         <div class="radio">
                             <div onclick="radiocheck('budu')">
-                                <input type="radio" name="budu" value="Я (мы) с удовольствием приду (придем)" 
-                                id="budu" class="custom-radio">
+                                <input type="radio" name="budu" value="Я (мы) с удовольствием приду (придем)" id="budu"
+                                    class="custom-radio">
                                 <label for="budu">Я (мы) с удовольствием приду (придем)</label>
                             </div>
                             <div onclick="radiocheck('neBudu')">
                                 <input type="radio" name="!budu"
-                                    value="К сожалению, не смогу (не сможем) присутствовать" 
-                                    id="!budu" class="custom-radio">
+                                    value="К сожалению, не смогу (не сможем) присутствовать" id="!budu"
+                                    class="custom-radio">
                                 <label for="!budu"> К сожалению, не смогу (не сможем) присутствовать</label>
                             </div>
                         </div>
@@ -220,14 +239,17 @@
                                 <input type="checkbox" name="no-alko" id="no-alko" class="custom-checkbox">
                                 <label for="no-alko">Безакогольное</label>
                             </div>
-                            <div>
-                                <input type="checkbox" name="other" id="other" class="custom-checkbox">
-                                <label for="other">Другое</label>
-                            </div>
                         </div>
                         <label for="other">Другое:</label>
-                        <input type="text" name="other" id="otherText">
-                        <button onclick="inform()" type="button">Отправить</button>
+                        <input type="text" name="other" id="otherText" required placeholder="Ваши пожелания">
+                        <br>
+                        <div class="subsub">
+                            <div class="btn-sub" onclick="inform()">
+                                Отправить
+                            </div>
+                        </div>
+                        
+                        <!-- <button onclick="inform()" type="button" class="btn_sub">Отправить</button> -->
                     </form>
                 </div>
             </div>

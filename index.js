@@ -73,8 +73,11 @@ function scrollArrow(id) {
     document.getElementById(id).scrollIntoView();
 }
 
-// function other(){
-//     if(document.getElementById('other').checked){
-//         let otherInputText = createElement('input')
-//     }
-// }
+function other(){
+    if(document.getElementById('other').checked){
+        let otherInputText = createElement('input');
+        let pole = document.getElementById('otherDiv');
+        pole.appendChild(otherInputText);
+        
+    }
+}
