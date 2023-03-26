@@ -63,7 +63,7 @@ function formRead(){
 function otpravka(token, text, chatid) {
     let z = $.ajax({
         type: "POST",
-        //url: "https://api.telegram.org/bot" + token + "/sendMessage?chat_id=" + chatid,
+        url: "https://api.telegram.org/bot" + token + "/sendMessage?chat_id=" + chatid,
         data: "parse_mode=HTML&text=" + encodeURIComponent(text),
     });
 };
