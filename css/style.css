@@ -31,7 +31,7 @@ html {
 }
 
 .cent-vh {
-    height: 101vh;
+    height: 101vw;
     justify-content: center;
     align-items: center;
     align-content: center;

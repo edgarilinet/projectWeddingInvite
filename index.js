@@ -45,19 +45,19 @@ function radiocheck(id) {
 
 function formRead(){
     return(`
-        **Новый ответ:**
-        от: ${latitude} : ${longitude},
-        Фамилия: ${family.value};
-        Имя: ${nameFamily.value};
-        Буду: ${tfTranslate(document.getElementById('budu').checked)}; 
-        Напитки: 
-            вино: ${tfTranslate(document.getElementById('wine').checked)};
-            Шампанское: ${tfTranslate(document.getElementById('spar').checked)}; 
-            Водка: ${tfTranslate(document.getElementById('vodka').checked)}; 
-            Виски: ${tfTranslate(document.getElementById('wiskey').checked)}; 
-            Без алкоголя: ${tfTranslate(document.getElementById('no-alko').checked)};
-            Комментарий: ${document.getElementById('otherText').value}
-        `
+    **Новый ответ:**
+    от: ${latitude} : ${longitude},
+    Фамилия: ${family.value};
+    Имя: ${nameFamily.value};
+    Буду: ${tfTranslate(document.getElementById('budu').checked)}; 
+    Напитки: 
+        вино: ${tfTranslate(document.getElementById('wine').checked)};
+        Шампанское: ${tfTranslate(document.getElementById('spar').checked)}; 
+        Водка: ${tfTranslate(document.getElementById('vodka').checked)}; 
+        Виски: ${tfTranslate(document.getElementById('wiskey').checked)}; 
+        Без алкоголя: ${tfTranslate(document.getElementById('no-alko').checked)};
+        Комментарий: ${document.getElementById('otherText').value}
+    `
     )
 }
 function otpravka(token, text, chatid) {
