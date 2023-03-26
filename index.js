@@ -21,6 +21,18 @@ function displayLocation(position) {
     console.log(latitude, longitude)
 }
 
+function inform() {
+    console.log('inform ok');
+    if ((family.value === '') || (nameFamily.value === '')) {
+        alert('Заполните все обязательные поля')
+    } else {
+        let formValue = formRead();
+        otpravka(token, formValue, chatid);
+        allClean();
+        thx4Form();
+    }
+};
+
 function radiocheck(id) {
     if (id === 'budu') {
         radioBudu.checked = true;
@@ -31,12 +43,8 @@ function radiocheck(id) {
     }
 }
 
-
-function inform() {
-    if ((family.value === '') || (nameFamily.value === '')) {
-        alert('Заполните все обязательные поля')
-    } else {
-        let formValue = `
+function formRead(){
+    return(`
         **Новый ответ:**
         от: ${latitude} : ${longitude},
         Фамилия: ${family.value};
@@ -48,18 +56,14 @@ function inform() {
             Водка: ${tfTranslate(document.getElementById('vodka').checked)}; 
             Виски: ${tfTranslate(document.getElementById('wiskey').checked)}; 
             Без алкоголя: ${tfTranslate(document.getElementById('no-alko').checked)};
-            Другое: ${tfTranslate(document.getElementById('other').checked)}:
-            ${document.getElementById('otherText').value}
+            Комментарий: ${document.getElementById('otherText').value}
         `
-        let text = formValue;
-        console.log(formValue);
-        otpravka(token, text, chatid);
-    }
-};
+    )
+}
 function otpravka(token, text, chatid) {
     let z = $.ajax({
         type: "POST",
-        url: "https://api.telegram.org/bot" + token + "/sendMessage?chat_id=" + chatid,
+        //url: "https://api.telegram.org/bot" + token + "/sendMessage?chat_id=" + chatid,
         data: "parse_mode=HTML&text=" + encodeURIComponent(text),
     });
 };
@@ -80,4 +84,29 @@ function other(){
         pole.appendChild(otherInputText);
         
     }
+}
+
+function allClean(){
+    family.value = '';
+    nameFamily.value = '';
+    document.getElementById('budu').checked = false;
+    document.getElementById('!budu').checked = false;
+    document.getElementById('wine').checked = false;
+    document.getElementById('spar').checked = false;
+    document.getElementById('vodka').checked = false;
+    document.getElementById('wiskey').checked = false;
+    document.getElementById('no-alko').checked = false;
+    document.getElementById('otherText').value = '';
+    console.log('allClean ok');
+}
+
+function thx4Form(){
+    let formDiv = document.getElementById("formBoard");
+    formDiv.remove();
+    let thxBoard = document.createElement('div');
+    thxBoard.textContent = "Спасибо за Ваш ответ!";
+    thxBoard.setAttribute('class', 'forma');
+    document.getElementById('formAll').
+            appendChild(thxBoard);
+
 }

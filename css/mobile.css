@@ -24,24 +24,6 @@ html {
     align-items: center;
 }
 
-.top-menu {
-    position: sticky;
-    height: 0px;
-    top: 10px;
-    z-index: 10;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.btn-sound {
-    width: 3em;
-    height: 3em;
-    background: #D9D9D9;
-    border-radius: 8px;
-    height: 60px;
-    width: 60px;
-}
-
 .cont {
     display: flex;
     width: 100%;
@@ -237,6 +219,7 @@ html {
 
 .pic {
     margin: 1em;
+    margin-bottom: 0px;
 }
 
 .pic img {
@@ -264,6 +247,11 @@ html {
     font-family: 'Usual';
     src: local("Usul"),
         url("fonts/TrajanPro3-Regular.woff") format("woff2");
+}
+
+@font-face {
+    font-family: "leraFont";
+    src: url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
 }
 
 .lovely {
@@ -500,4 +488,8 @@ input[type="text"] {
     margin-left: -0.4em;
     margin-right: -0.4em;
     border-radius: 100%;
+}
+
+.lera-font{
+
 }

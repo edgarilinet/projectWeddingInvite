@@ -23,24 +23,6 @@ html {
     align-items: center;
 }
 
-.top-menu {
-    position: sticky;
-    height: 0px;
-    top: 10px;
-    z-index: 10;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.btn-sound {
-    width: 3em;
-    height: 3em;
-    background: #D9D9D9;
-    border-radius: 8px;
-    height: 60px;
-    width: 60px;
-}
-
 .cont {
     display: flex;
     width: 100%;
@@ -242,6 +224,7 @@ html {
 
 .pic {
     margin: 1em;
+    margin-bottom: 0%;
 }
 
 .pic img {
@@ -289,10 +272,19 @@ html {
 
 .arrow-sub img {
     width: 30px;
+    height: 30px;
     display: flex;
     flex-direction: column;
     position: relative;
     opacity: 100%;
+}
+
+.arrow-sub{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 #secArrow {
@@ -495,6 +487,7 @@ input[type="text"] {
     display: flex;
     width: 5em;
     height: 5em;
-    margin: 0.5em;
+    margin: 0.3em;
+    margin-top: 2em;
     border-radius: 100%;
 }
