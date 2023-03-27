@@ -31,7 +31,7 @@ html {
 }
 
 .cent-vh {
-    height: 101vw;
+    height: 101vh;
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -193,7 +193,8 @@ html {
     text-transform: capitalize;
     color: #000000;
     margin-top: 0.5em;
-    line-height: 2.5em;
+    line-height: 1.5em;
+
 }
 
 .preMapa {
@@ -253,6 +254,11 @@ html {
 .lovely {
     font-family: "AgoniaLyubvi";
     line-height: 2em;
+}
+
+.main-text{
+    font-family: "AgoniaLyubvi";
+    line-height: 1.5em;
 }
 
 .small-text {
